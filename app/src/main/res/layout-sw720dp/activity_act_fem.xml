@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.physbun.actFEMA"
+    android:background="#212121"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:imeOptions = "actionDone">
+
+    <TextView android:text="F = m * a" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="100dp"
+        android:id="@+id/textView38"
+        android:textColor="#2196F3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="visible" />
+
+    <EditText
+        android:layout_width="450dp"
+        android:layout_height="180dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText73"
+        android:hint="F"
+        android:background="#424242"
+        android:layout_below="@+id/textView38"
+        android:layout_alignRight="@+id/button65"
+        android:layout_alignEnd="@+id/button65"
+        android:textSize="90dp"
+        android:visibility="visible"
+        android:layout_marginTop="50dp"
+        android:imeOptions = "actionDone"/>
+
+    <EditText
+        android:layout_width="450dp"
+        android:layout_height="180dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText74"
+        android:hint="m"
+        android:background="#424242"
+        android:layout_below="@+id/editText73"
+        android:layout_alignLeft="@+id/editText73"
+        android:layout_alignStart="@+id/editText73"
+        android:textSize="90dp"
+        android:visibility="visible"
+        android:layout_marginTop="10dp"
+        android:imeOptions = "actionDone"/>
+
+    <EditText
+        android:layout_width="450dp"
+        android:layout_height="180dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText75"
+        android:hint="a"
+        android:background="#424242"
+        android:layout_below="@+id/editText74"
+        android:layout_alignLeft="@+id/editText74"
+        android:layout_alignStart="@+id/editText74"
+        android:textSize="90dp"
+        android:visibility="visible"
+        android:layout_marginTop="8dp"
+        android:imeOptions = "actionDone"/>
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:text="Solve"
+        android:id="@+id/button65"
+        android:nestedScrollingEnabled="false"
+        android:onClick="btnEnterFEMA"
+        android:background="#00E676"
+        android:textSize="60dp"
+        android:layout_marginBottom="138dp"
+        android:layout_above="@+id/adView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="190dp"
+        android:text="Clear"
+        android:id="@+id/button66"
+        android:onClick="btnClearFEMA"
+        android:background="#2196F3"
+        android:textSize="60dp"
+        android:layout_alignTop="@+id/button65"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F ="
+        android:id="@+id/textView40"
+        android:textSize="90dp"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/editText73"
+        android:layout_toLeftOf="@+id/textView38"
+        android:layout_toStartOf="@+id/textView38"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="m ="
+        android:id="@+id/textView41"
+        android:textSize="90dp"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/editText74"
+        android:layout_alignRight="@+id/textView42"
+        android:layout_alignEnd="@+id/textView42"
+        android:layout_marginTop="33dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a ="
+        android:id="@+id/textView42"
+        android:textSize="90dp"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/editText75"
+        android:layout_alignRight="@+id/textView40"
+        android:layout_alignEnd="@+id/textView40"
+        android:layout_marginTop="37dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

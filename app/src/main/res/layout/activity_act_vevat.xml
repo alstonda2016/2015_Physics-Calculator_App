@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.physbun.ActVevat"
+    android:background="#212121">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V = vo + at"
+        android:id="@+id/textView10"
+        android:textSize="70sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#2196F3" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="@dimen/n60"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText7"
+        android:hint="V"
+        android:background="#424242"
+        android:textSize="40sp"
+        android:layout_below="@+id/textView10"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="@dimen/n60"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText8"
+        android:hint="Vo"
+        android:background="#424242"
+        android:textSize="40sp"
+        android:layout_below="@+id/editText7"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="@dimen/n60"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText9"
+        android:hint="a"
+        android:background="#424242"
+        android:textSize="40sp"
+        android:layout_below="@+id/editText8"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="@dimen/n60"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText10"
+        android:hint="t"
+        android:background="#424242"
+        android:textSize="40sp"
+        android:layout_below="@+id/editText9"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:layout_width="@dimen/nnn120"
+        android:layout_height="@dimen/n80"
+        android:text="Solve"
+        android:id="@+id/button2"
+        android:onClick="btnEnterb"
+        android:layout_below="@+id/editText10"
+        android:layout_alignRight="@+id/textView10"
+        android:layout_alignEnd="@+id/textView10"
+        android:layout_marginTop="15dp"
+        android:background="#00E676"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="@dimen/nnn120"
+        android:layout_height="@dimen/n80"
+        android:text="Clear"
+        android:id="@+id/button58"
+        android:onClick="btnClearVEVAT"
+        android:layout_alignTop="@+id/button2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#2196F3"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="V ="
+        android:id="@+id/textView71"
+        android:textSize="40sp"
+        android:layout_alignTop="@+id/editText7"
+        android:layout_alignRight="@+id/textView72"
+        android:layout_alignEnd="@+id/textView72"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vo ="
+        android:id="@+id/textView72"
+        android:textSize="40sp"
+        android:layout_alignTop="@+id/editText8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a ="
+        android:id="@+id/textView73"
+        android:textSize="40sp"
+        android:layout_alignTop="@+id/editText9"
+        android:layout_alignRight="@+id/textView72"
+        android:layout_alignEnd="@+id/textView72"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="t ="
+        android:id="@+id/textView74"
+        android:textSize="40sp"
+        android:layout_alignTop="@+id/editText10"
+        android:layout_alignRight="@+id/textView73"
+        android:layout_alignEnd="@+id/textView73"
+        android:layout_marginTop="6dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+</RelativeLayout>

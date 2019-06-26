@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Easy Physics</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_convertact">Convertact</string>
+    <string name="title_activity_act_linear">actLinear</string>
+    <string name="title_activity_act_xe_vt">ActXeVT</string>
+    <string name="title_activity_ae_vt">AeVT</string>
+    <string name="title_activity_act_vevat">ActVevat</string>
+    <string name="title_activity_act4">Act4</string>
+    <string name="title_activity_act_torque">actTorque</string>
+    <string name="title_activity_act_te_rf">ActTeRF</string>
+    <string name="title_activity_act_rfrf">actRFRF</string>
+    <string name="title_activity_act_grav">actGrav</string>
+    <string name="title_activity_act_fgmg">actFgmg</string>
+    <string name="title_activity_actfguuh">actfguuh</string>
+    <string name="title_activity_act_work">actWork</string>
+    <string name="title_activity_act_pwt">actPWT</string>
+    <string name="title_activity_act_wpt">actWPT</string>
+    <string name="title_activity_act_friction">actFriction</string>
+    <string name="title_activity_act_others">actOthers</string>
+    <string name="title_activity_act_dopler">actDopler</string>
+    <string name="title_activity_act_dop_pp">actDopPP</string>
+    <string name="title_activity_act_dop_pm">actDopPM</string>
+    <string name="title_activity_act_dop_mp">actDopMP</string>
+    <string name="title_activity_act_dop_mm">ActDopMM</string>
+    <string name="title_activity_act_kinetic">actKinetic</string>
+    <string name="title_activity_act_je_ft">actJeFT</string>
+    <string name="title_activity_act_pemv">actPEMV</string>
+    <string name="title_activity_act_fem">actFEMA</string>
+    <string name="title_activity_act_fuf">actFUF</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6598871117579204/5610857371</string>
+    <string name="title_activity_act_pmvv">actPMVV</string>
+    <string name="title_activity_act_ukx">actUKX</string>
+
+</resources>

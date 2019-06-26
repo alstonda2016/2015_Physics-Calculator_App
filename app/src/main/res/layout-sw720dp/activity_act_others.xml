@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.physbun.actOthers"
+    android:background="#212121">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Other Formulas"
+        android:id="@+id/textView28"
+        android:textSize="90dp"
+        android:textColor="#2196F3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:text="J = F * t"
+        android:id="@+id/button34"
+        android:onClick="actJEFT"
+        android:layout_below="@+id/textView28"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#424242"
+        android:textColor="#2196F3"
+        android:textSize="80dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="75sp" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:text="p = m * v"
+        android:id="@+id/button35"
+        android:onClick="actPEMV"
+        android:background="#424242"
+        android:textColor="#2196F3"
+        android:textSize="80dp"
+        android:textAllCaps="false"
+        android:layout_above="@+id/button36"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:text="F = m * a"
+        android:id="@+id/button36"
+        android:onClick="actFEMA"
+        android:layout_below="@+id/button34"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#424242"
+        android:layout_marginTop="20dp"
+        android:textColor="#2196F3"
+        android:textSize="80dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:text="Ff =  µk * Fn"
+        android:id="@+id/button37"
+        android:layout_alignBottom="@+id/button36"
+        android:layout_alignRight="@+id/button35"
+        android:layout_alignEnd="@+id/button35"
+        android:onClick="actFUF"
+        android:background="#424242"
+        android:textColor="#2196F3"
+        android:textSize="60dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="20dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:text="ΔP = m(V - Vo)"
+        android:id="@+id/button8"
+        android:layout_below="@+id/button36"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#2196F3"
+        android:background="#424242"
+        android:textSize="53dp"
+        android:textAllCaps="false"
+        android:onClick="actPMVV" />
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="270dp"
+        android:text="Us = (k * x²)/2"
+        android:id="@+id/button73"
+        android:onClick="actUKX"
+        android:textColor="#2196F3"
+        android:background="#424242"
+        android:textSize="50dp"
+        android:layout_alignTop="@+id/button8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAllCaps="false"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.physbun.actJeFT"
+    android:background="#212121">
+
+    <TextView android:text="J = F * t" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="71sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/textView36"
+        android:textColor="#2196F3" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="@dimen/n80"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText67"
+        android:hint="J"
+        android:background="#424242"
+        android:layout_below="@+id/textView36"
+        android:layout_alignRight="@+id/button38"
+        android:layout_alignEnd="@+id/button38"
+        android:textSize="50sp" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="@dimen/n80"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText68"
+        android:hint="F"
+        android:background="#424242"
+        android:layout_below="@+id/editText67"
+        android:layout_alignLeft="@+id/editText67"
+        android:layout_alignStart="@+id/editText67"
+        android:layout_marginTop="8dp"
+        android:textSize="50sp" />
+
+    <EditText
+        android:layout_width="220dp"
+        android:layout_height="@dimen/n80"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText69"
+        android:hint="t"
+        android:background="#424242"
+        android:layout_below="@+id/editText68"
+        android:layout_alignLeft="@+id/editText68"
+        android:layout_alignStart="@+id/editText68"
+        android:layout_marginTop="8dp"
+        android:textSize="50sp" />
+
+    <Button
+        android:layout_width="@dimen/nnn120"
+        android:layout_height="@dimen/n80"
+        android:text="Enter"
+        android:id="@+id/button38"
+        android:onClick="btnEnterJEFT"
+        android:layout_below="@+id/editText69"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:background="#00E676"
+        android:textSize="30sp" />
+
+    <Button
+        android:layout_width="@dimen/nnn120"
+        android:layout_height="@dimen/n80"
+        android:text="Clear"
+        android:id="@+id/button62"
+        android:onClick="btnClearJEFT"
+        android:layout_alignTop="@+id/button38"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#2196F3"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="J ="
+        android:id="@+id/textView52"
+        android:textSize="50sp"
+        android:layout_below="@+id/textView36"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="F = "
+        android:id="@+id/textView53"
+        android:textSize="50sp"
+        android:layout_alignTop="@+id/editText68"
+        android:layout_alignLeft="@+id/textView52"
+        android:layout_alignStart="@+id/textView52"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="t ="
+        android:id="@+id/textView54"
+        android:layout_alignTop="@+id/editText69"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textSize="50sp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="8dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

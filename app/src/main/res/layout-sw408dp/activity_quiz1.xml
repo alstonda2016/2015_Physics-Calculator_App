@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.physbun.quiz1"
+    android:background="#212121">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:text="Press start to begin the quiz!"
+        android:id="@+id/textView87"
+        android:textSize="30dp"
+        android:layout_below="@+id/textView89"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#8f8f8f"
+        android:textColor="#000000"
+        android:editable="false"
+        android:visibility="visible"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="130dp"
+        android:inputType="numberDecimal"
+        android:ems="10"
+        android:id="@+id/editText86"
+        android:layout_below="@+id/textView87"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:focusable="true"
+        android:visibility="invisible"
+        android:background="#8f8f8f"
+        android:textSize="40dp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="95dp"
+        android:id="@+id/textView88"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:textColor="#2196F3"
+        android:layout_alignTop="@+id/button95"
+        android:layout_alignRight="@+id/textView87"
+        android:layout_alignEnd="@+id/textView87"
+        android:layout_marginTop="30dp"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:text="Enter"
+        android:id="@+id/button94"
+        android:layout_below="@+id/textView88"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="30dp"
+        android:onClick="realsonve"
+        android:nestedScrollingEnabled="false"
+        android:visibility="invisible"
+        android:background="#00E676" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quiz"
+        android:id="@+id/textView89"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="60dp"
+        android:textColor="#2196F3"
+        android:visibility="visible" />
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="130dp"
+        android:text="Start"
+        android:id="@+id/button95"
+        android:textSize="30dp"
+        android:onClick="start"
+        android:visibility="visible"
+        android:layout_alignTop="@+id/editText86"
+        android:layout_centerHorizontal="true"
+        android:background="#2196F3" />
+</RelativeLayout>

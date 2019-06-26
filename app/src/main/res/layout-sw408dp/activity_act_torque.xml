@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.david.physbun.actTorque"
+    android:background="#212121"
+    android:imeOptions = "actionDone">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Torque"
+        android:id="@+id/textView15"
+        android:textSize="100dp"
+        android:textColor="#2196F3"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:text="τ = r * F"
+        android:id="@+id/button11"
+        android:textSize="50dp"
+        android:onClick="btnEone"
+        android:layout_below="@+id/button12"
+        android:layout_centerHorizontal="true"
+        android:textColor="#2196F3"
+        android:background="#424242"
+        android:layout_marginTop="18dp"
+        android:textAllCaps="false"/>
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:text="r1*F1 = r2 * F2"
+        android:id="@+id/button12"
+        android:onClick="btnTorqrfrf"
+        android:layout_below="@+id/textView15"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#2196F3"
+        android:background="#424242"
+        android:textSize="40dp"
+        android:textAllCaps="false"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>
